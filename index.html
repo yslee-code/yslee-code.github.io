@@ -191,8 +191,9 @@ input,select{width:100%;border:1px solid var(--line);border-radius:9px;backgroun
   .vnav{grid-column:2;grid-row:1;justify-content:flex-end}
   .vbar .vx{grid-column:3;grid-row:1}
 }
-.vstage{flex:1;overflow:auto;padding:16px;display:flex;justify-content:center;align-items:flex-start;-webkit-overflow-scrolling:touch}
-.vstage canvas{max-width:100%;height:auto;background:#fff;box-shadow:0 8px 30px rgba(0,0,0,.35);border-radius:3px}
+.vstage{flex:1;overflow:auto;padding:16px;display:flex;justify-content:flex-start;align-items:flex-start;-webkit-overflow-scrolling:touch}
+.vstage canvas{height:auto;margin:0 auto;background:#fff;box-shadow:0 8px 30px rgba(0,0,0,.35);border-radius:3px}
+.vbtn.vz{padding:8px 11px;font-size:15px;line-height:1;min-width:38px}
 .vmsg{color:#fff;font-size:14px;text-align:center;padding:40px 20px;max-width:34rem;line-height:1.8}
 .vmsg a{color:#9fe3d4}
 footer{background:var(--card);border-top:1px solid var(--line);color:var(--muted);font-size:12.5px;padding-block:20px 14px}
@@ -276,6 +277,9 @@ footer.by b{color:var(--ink-2);font-size:inherit;font-weight:700}
 .rm.jg:hover{background:color-mix(in srgb,var(--amber) 18%,var(--card))}
 .rm.gv{color:var(--brick);background:var(--brick-bg);border-color:color-mix(in srgb,var(--brick) 34%,transparent)}
 .rm.gv:hover{background:color-mix(in srgb,var(--brick) 18%,var(--card))}
+.tn{display:inline;font-size:12.5px;font-weight:500;color:var(--muted)}
+.tn::before{content:"("}
+.tn::after{content:")"}
 .marks{display:flex;flex-wrap:wrap;gap:5px;margin:9px 0 0}
 .marks .rm{margin-left:0}
 .vopen{display:inline-block;margin-top:4px;padding:10px 16px;border-radius:9px;background:var(--teal);color:#fff;font-weight:800;font-size:14px;text-decoration:none}
@@ -306,8 +310,8 @@ footer.by b{color:var(--ink-2);font-size:inherit;font-weight:700}
   <h2>한눈에 보기</h2>
   <p class="sub">법무법인 광장·법무법인 을지의 각 법률의견서와 태일회계법인 검토보고서에서 공통으로 확인된 내용입니다.</p>
   <div class="finds">
-    <article class="find"><strong>종교시설 세 곳은 조합원이 아닙니다</strong><p>분양신청기간에 신청하지 않으면 그 기간이 끝난 다음 날 조합원 지위를 잃습니다. 대토협약을 먼저 맺었더라도 마찬가지입니다. 대토는 분양이 아니라, 현금청산대상자에게 현금 대신 토지로 보상하는 방법이기 때문입니다.</p><div class="marks"><a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=6" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="6">광장 6면</a><a class="rm " href="https://yslee-code.github.io/eulji-supp.pdf#page=2" target="_blank" rel="noopener" data-doc="eulji-supp" data-pg="2">을지 보충 2면</a></div></article>
-    <article class="find warn"><strong>그런데 131억원이 분모에 남아 있습니다</strong><p>비례율의 분모에는 분양받는 조합원의 종전자산만 들어갑니다. 그런데 조합원이 아닌 세 곳의 종전자산 13,108,873,120원이 분모에 그대로 들어간 채 비례율이 계산되어 왔습니다.</p><div class="marks"><a class="rm " href="https://yslee-code.github.io/taeil.pdf#page=5" target="_blank" rel="noopener" data-doc="taeil" data-pg="5">태일 5면</a><a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=5" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="5">총회 책자 303면</a></div></article>
+    <article class="find"><strong>종교시설 세 곳은 조합원이 아닙니다</strong><p>분양신청기간에 신청하지 않으면 그 기간이 끝난 다음 날 조합원 지위를 잃습니다. 대토협약을 먼저 맺었더라도 마찬가지입니다. 대토는 분양이 아니라, 현금청산대상자<span class="tn">법은 「분양신청을 하지 아니한 자」라고 합니다</span>에게 현금 대신 토지로 보상하는 방법이기 때문입니다.</p><div class="marks"><a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=6" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="6">광장 5면</a><a class="rm " href="https://yslee-code.github.io/eulji-supp.pdf#page=2" target="_blank" rel="noopener" data-doc="eulji-supp" data-pg="2">을지 보충 2면</a></div></article>
+    <article class="find warn"><strong>그런데 131억원이 분모에 남아 있습니다</strong><p>비례율의 분모에는 분양받는 조합원의 종전자산만 들어갑니다. 그런데 조합원이 아닌 세 곳의 종전자산 13,108,873,120원이 분모에 그대로 들어간 채 비례율이 계산되어 왔습니다.</p><div class="marks"><a class="rm " href="https://yslee-code.github.io/taeil.pdf#page=5" target="_blank" rel="noopener" data-doc="taeil" data-pg="5">태일 4면</a><a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=5" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="5">총회 책자 303면</a></div></article>
     <article class="find"><strong>관리처분계획서가 이미 같은 내용을 정하고 있습니다</strong><p>관리처분계획서 제10조는 “대법원 판결에 따라 분양신청을 하지 않은 경우 조합원에서 제외됨”이라고 적고 있습니다. 제14조 제13항은 청산자의 종전자산을 비례율 분모에서 빼라고 정합니다.</p><div class="marks"><a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=13" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="13">제10조 · 311면</a><a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=16" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="16">제14조 제13항 · 314면</a></div></article>
     <article class="find warn"><strong>조합장 자격 문제가 여기서 파생됩니다</strong><p>조합 임원은 조합원 중에서 뽑아야 하고, 조합정관은 현금청산대상자는 임원이 될 수 없다고 못 박고 있습니다. 현 조합장은 중부감리교회를 소유한 재단의 대리인입니다.</p><div class="marks"><a class="rm jg" href="https://yslee-code.github.io/jeongkwan.pdf#page=5" target="_blank" rel="noopener" data-doc="jeongkwan" data-pg="5">정관 제17조</a><a class="rm " href="https://yslee-code.github.io/eulji.pdf#page=15" target="_blank" rel="noopener" data-doc="eulji" data-pg="15">을지 15면</a></div></article>
   </div>
@@ -327,7 +331,7 @@ footer.by b{color:var(--ink-2);font-size:inherit;font-weight:700}
       <tr class="total"><td data-l="구분">합계</td><td class="hide-m"></td><td class="r" data-l="면적">6,099㎡</td><td class="r" data-l="종전자산 평가액">13,108,873,120원</td><td class="hide-m"></td></tr>
     </tbody>
   </table></div>
-  <div class="marks"><a class="rm " href="https://yslee-code.github.io/taeil.pdf#page=5" target="_blank" rel="noopener" data-doc="taeil" data-pg="5">태일 5면</a><a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=5" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="5">총회 책자 303면</a></div>
+  <div class="marks"><a class="rm " href="https://yslee-code.github.io/taeil.pdf#page=5" target="_blank" rel="noopener" data-doc="taeil" data-pg="5">태일 4면</a><a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=5" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="5">총회 책자 303면</a></div>
 
   <h3>비례율은 이렇게 계산됩니다</h3>
   <div class="calc">
@@ -337,7 +341,7 @@ footer.by b{color:var(--ink-2);font-size:inherit;font-weight:700}
     <div class="calcrow"><b>현행 분모</b><span>÷ 122,592,899,945원 &nbsp;→&nbsp; <strong>125.00%</strong></span></div>
     <div class="calcrow hi"><b>131억원 제외 시</b><span>÷ 109,484,026,825원 &nbsp;→&nbsp; 약 140%</span></div>
   </div>
-  <div class="marks"><a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=7" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="7">총회 책자 305면</a><a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=5" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="5">총회 책자 303면</a><a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=13" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="13">광장 13면</a><a class="rm " href="https://yslee-code.github.io/taeil.pdf#page=15" target="_blank" rel="noopener" data-doc="taeil" data-pg="15">태일 15면</a></div>
+  <div class="marks"><a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=7" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="7">총회 책자 305면</a><a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=5" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="5">총회 책자 303면</a><a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=13" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="13">광장 12면</a><a class="rm " href="https://yslee-code.github.io/taeil.pdf#page=15" target="_blank" rel="noopener" data-doc="taeil" data-pg="15">태일 14면</a></div>
   <p class="note">※ 약 140%는 다른 항목이 그대로라고 가정한 추정치입니다. 관리처분계획서 제14조 제13항은 청산자를 분모에서 뺄 때 사업비의 청산금과 예비비도 함께 조정하라고 정하고 있어, 종교시설 보상비를 사업비에 반영하는 과정에서 수치가 달라질 수 있습니다. 정확한 비례율은 회계법인이 다시 계산하고 총회 의결과 변경인가를 거쳐 확정됩니다.<a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=16" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="16">제14조 제13항 · 314면</a></p>
   <p class="note" style="margin-top:12px">한 가지 더 있습니다. 지금의 관리처분계획도 「청산 및 수용대상」 108,138,206,305원은 이미 분모에서 빼고 있습니다. 다른 현금청산대상자는 빼면서 종교시설 세 곳만 남겨둔 것입니다.<a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=40" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="40">총회 책자 338면</a></p>
 </section>
@@ -349,19 +353,20 @@ footer.by b{color:var(--ink-2);font-size:inherit;font-weight:700}
   <div class="finds" style="grid-template-columns:minmax(0,1fr)">
     <article class="find">
       <strong>첫째 — 분양신청을 하지 않으면 조합원이 아닙니다</strong>
-      <p>도시정비법 제72조·제73조와 조합정관 제11조 제2항은 정해진 기간에 분양신청을 하지 않으면 조합원 자격을 잃는다고 정합니다. 대법원도 “분양신청기간 종료일 다음 날에 현금청산대상자가 되고 조합원의 지위를 상실한다”고 거듭 판단해 왔습니다. 중부감리교회의 분양신청기간은 2017년 2월 1일부터 3월 7일까지였고 3월 20일까지 연장되었지만, 신청은 없었습니다.</p><div class="marks"><a class="rm jg" href="https://yslee-code.github.io/jeongkwan.pdf#page=3" target="_blank" rel="noopener" data-doc="jeongkwan" data-pg="3">정관 제11조 제2항</a><a class="rm " href="https://yslee-code.github.io/eulji.pdf#page=10" target="_blank" rel="noopener" data-doc="eulji" data-pg="10">을지 10면</a><a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=6" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="6">광장 6면</a></div>
+      <p>도시정비법 제72조·제73조와 조합정관 제11조 제2항은 정해진 기간에 분양신청을 하지 않으면 조합원 자격을 잃는다고 정합니다. 대법원도 “분양신청기간 종료일 다음 날에 현금청산대상자가 되고 조합원의 지위를 상실한다”고 거듭 판단해 왔습니다. 중부감리교회의 분양신청기간은 2017년 2월 1일부터 3월 7일까지였고 3월 20일까지 연장되었지만, 신청은 없었습니다.</p>
+      <p style="margin-top:9px;font-size:13.5px;color:var(--muted)"><b>용어에 관하여</b> — 법률 조문은 이들을 「<b>분양신청을 하지 아니한 자</b>」라고 부르고, 그에 대한 조치를 「현금으로 청산」한다고 규정합니다. 조합정관 제17조 제1항 제7호와 제44조 제6항, 그리고 조합의 관리처분계획서는 같은 사람을 「<b>현금청산대상자</b>」라고 적고 있습니다.<a class="rm jg" href="https://yslee-code.github.io/jeongkwan.pdf#page=5" target="_blank" rel="noopener" data-doc="jeongkwan" data-pg="5">정관 제17조 제1항 제7호</a><a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=40" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="40">총회 책자 338면</a> 법원도 판결 이유에서 이 표현을 그대로 사용합니다. 이 안내문에서는 조합 문서의 표현을 따라 「현금청산대상자」로 씁니다.</p><div class="marks"><a class="rm jg" href="https://yslee-code.github.io/jeongkwan.pdf#page=3" target="_blank" rel="noopener" data-doc="jeongkwan" data-pg="3">정관 제11조 제2항</a><a class="rm " href="https://yslee-code.github.io/eulji.pdf#page=10" target="_blank" rel="noopener" data-doc="eulji" data-pg="10">을지 10면</a><a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=6" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="6">광장 5면</a></div>
     </article>
     <article class="find">
       <strong>둘째 — 대토는 분양이 아닙니다</strong>
-      <p>대토는 현금청산대상자에게 현금 대신 토지로 보상하는 방법입니다. 분양받을 권리와는 다릅니다. 조합정관과 관리처분계획서는 분양 대상을 공동주택과 상가로만 정했고, 종교용지 4,953㎡는 「정비기반시설 및 기타용지」로 묶어 두었습니다. 종교용지는 애초에 분양 대상이 아니었으니 분양신청을 할 수 있는 구조가 아니었습니다.</p><div class="marks"><a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=2" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="2">총회 책자 300면</a><a class="rm " href="https://yslee-code.github.io/taeil.pdf#page=11" target="_blank" rel="noopener" data-doc="taeil" data-pg="11">태일 11면</a><a class="rm " href="https://yslee-code.github.io/eulji-supp.pdf#page=2" target="_blank" rel="noopener" data-doc="eulji-supp" data-pg="2">을지 보충 2면</a></div>
+      <p>대토는 현금청산대상자에게 현금 대신 토지로 보상하는 방법입니다. 분양받을 권리와는 다릅니다. 조합정관과 관리처분계획서는 분양 대상을 공동주택과 상가로만 정했고, 종교용지 4,953㎡는 「정비기반시설 및 기타용지」로 묶어 두었습니다. 종교용지는 애초에 분양 대상이 아니었으니 분양신청을 할 수 있는 구조가 아니었습니다.</p><div class="marks"><a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=2" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="2">총회 책자 300면</a><a class="rm " href="https://yslee-code.github.io/taeil.pdf#page=11" target="_blank" rel="noopener" data-doc="taeil" data-pg="11">태일 10면</a><a class="rm " href="https://yslee-code.github.io/eulji-supp.pdf#page=2" target="_blank" rel="noopener" data-doc="eulji-supp" data-pg="2">을지 보충 2면</a></div>
     </article>
     <article class="find warn">
       <strong>셋째 — 조합원이 아니면 비례율 분모에 들어갈 수 없습니다</strong>
-      <p>비례율은 조합원들이 개발이익을 어떤 비율로 나눌지 정하는 수치입니다. 사업에서 빠진 현금청산대상자는 개발이익을 나눠 받지 않고 따로 보상을 받습니다. 그 자산이 분모에 남아 있을 이유가 없습니다. 분모가 실제보다 크면 비례율이 낮게 나오고, 조합원 각자의 권리가액도 그만큼 낮아집니다.</p><div class="marks"><a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=13" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="13">광장 13면</a><a class="rm " href="https://yslee-code.github.io/taeil.pdf#page=21" target="_blank" rel="noopener" data-doc="taeil" data-pg="21">태일 21면</a><a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=16" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="16">제14조 제13항 · 314면</a></div>
+      <p>비례율은 조합원들이 개발이익을 어떤 비율로 나눌지 정하는 수치입니다. 사업에서 빠진 현금청산대상자는 개발이익을 나눠 받지 않고 따로 보상을 받습니다. 그 자산이 분모에 남아 있을 이유가 없습니다. 분모가 실제보다 크면 비례율이 낮게 나오고, 조합원 각자의 권리가액도 그만큼 낮아집니다.</p><div class="marks"><a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=13" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="13">광장 12면</a><a class="rm " href="https://yslee-code.github.io/taeil.pdf#page=21" target="_blank" rel="noopener" data-doc="taeil" data-pg="21">태일 20면</a><a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=16" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="16">제14조 제13항 · 314면</a></div>
     </article>
     <article class="find warn">
       <strong>넷째 — 조합 임원은 조합원 중에서 선임되어야 합니다</strong>
-      <p>도시정비법 제41조 제1항이 그렇게 정하고 있습니다. 법인의 대리인도 그 법인이 조합원일 때만 임원이 될 수 있습니다. 조합정관 제17조 제1항 제7호는 한 걸음 더 나아가, 현금청산대상자는 임원이 될 수 없다고 못 박고 있습니다. 중부감리교회를 소유한 재단이 2017년에 조합원 지위를 잃었다면, 그 대리인이 2024년에 조합장으로 뽑힌 것은 자격 없는 사람을 뽑은 셈이 됩니다.</p><div class="marks"><a class="rm jg" href="https://yslee-code.github.io/jeongkwan.pdf#page=5" target="_blank" rel="noopener" data-doc="jeongkwan" data-pg="5">정관 제17조 제1항 제7호</a><a class="rm " href="https://yslee-code.github.io/eulji.pdf#page=15" target="_blank" rel="noopener" data-doc="eulji" data-pg="15">을지 15면</a><a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=29" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="29">광장 29면</a></div>
+      <p>도시정비법 제41조 제1항이 그렇게 정하고 있습니다. 법인의 대리인도 그 법인이 조합원일 때만 임원이 될 수 있습니다. 조합정관 제17조 제1항 제7호는 한 걸음 더 나아가, 현금청산대상자는 임원이 될 수 없다고 못 박고 있습니다. 중부감리교회를 소유한 재단이 2017년에 조합원 지위를 잃었다면, 그 대리인이 2024년에 조합장으로 뽑힌 것은 자격 없는 사람을 뽑은 셈이 됩니다.</p><div class="marks"><a class="rm jg" href="https://yslee-code.github.io/jeongkwan.pdf#page=5" target="_blank" rel="noopener" data-doc="jeongkwan" data-pg="5">정관 제17조 제1항 제7호</a><a class="rm " href="https://yslee-code.github.io/eulji.pdf#page=15" target="_blank" rel="noopener" data-doc="eulji" data-pg="15">을지 15면</a><a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=29" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="29">광장 28면</a></div>
     </article>
   </div>
 </section>
@@ -372,26 +377,38 @@ footer.by b{color:var(--ink-2);font-size:inherit;font-weight:700}
 
   <details class="qa" open><summary>131억원이 사라진 건가요? 누가 가져간 겁니까?</summary><div class="body">
     <p>아닙니다. 조합 밖으로 나간 돈도, 누가 가져간 돈도 아닙니다. 비례율을 구하는 나눗셈에서 분모에 들어가지 말아야 할 금액이 들어가 있다는 뜻입니다.</p>
-    <p>분모가 실제보다 크면 비례율이 낮게 나옵니다. 비례율이 낮으면 조합원 각자의 권리가액이 낮게 잡히고, 분담금은 그만큼 많아지거나 환급금이 적어집니다. 바로잡으면 분담금과 청산금에 반영되어 정산됩니다.</p><div class="marks"><a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=5" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="5">총회 책자 303면</a><a class="rm " href="https://yslee-code.github.io/taeil.pdf#page=15" target="_blank" rel="noopener" data-doc="taeil" data-pg="15">태일 15면</a></div>
+    <p>분모가 실제보다 크면 비례율이 낮게 나옵니다. 비례율이 낮으면 조합원 각자의 권리가액이 낮게 잡히고, 분담금은 그만큼 많아지거나 환급금이 적어집니다. 바로잡으면 분담금과 청산금에 반영되어 정산됩니다.</p><div class="marks"><a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=5" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="5">총회 책자 303면</a><a class="rm " href="https://yslee-code.github.io/taeil.pdf#page=15" target="_blank" rel="noopener" data-doc="taeil" data-pg="15">태일 14면</a></div>
   </div></details>
 
   <details class="qa"><summary>수원시가 조합장 변경인가를 해줬는데도 자격이 없다는 건가요?</summary><div class="body">
     <p class="quote">“행정청(수원시)이 인가를 하였다고 하여 무효인 총회 결의가 유효로 인정될 수는 없으므로, 위와 같은 주장도 전혀 타당하지 않은 것으로 판단됩니다.”</p>
-    <p class="src">법무법인 광장 법률의견서 27~28면<a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=28" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="28">원문 28면</a></p>
-    <p>법무법인 을지는 한 가지를 더 지적합니다. 조합임원의 변경은 도시정비법 시행령상 「경미한 사항」으로서 신고 대상이므로, 수원시가 피선임 자격을 실질적으로 심사했다고 보기 어렵다는 것입니다.<a class="rm " href="https://yslee-code.github.io/eulji.pdf#page=15" target="_blank" rel="noopener" data-doc="eulji" data-pg="15">을지 15면</a></p>
+    <p class="src">법무법인 광장 법률의견서 27~28면<a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=28" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="28">원문 27면</a></p>
+    <p>법무법인 을지는 한 가지를 더 지적합니다. 조합임원의 변경은 도시정비법 시행령 제31조 제4호의 「경미한 사항」으로서 신고 대상입니다. 그래서 수원시가 피선임 자격을 실질적으로 심사했다고 보기 어렵고, <strong>행정청이 수리했다고 해서 총회 결의의 하자가 치유되지도 않습니다.</strong><a class="rm" href="https://yslee-code.github.io/eulji-supp.pdf#page=3" target="_blank" rel="noopener" data-doc="eulji-supp" data-pg="3">을지 보충 3면</a></p>
   </div></details>
 
   <details class="qa"><summary>조합원명부에 계속 올라 있었고 현금청산자로 확정된 적도 없습니다</summary><div class="body">
     <p class="quote">“조합원명부에 종교재단을 여전히 조합원으로 기재하고, 해당 종교재단의 대리인이 의결권을 행사하고 조합장으로 선임되었다고 하더라도, 위와 같은 사정만으로 조합원 지위가 회복된다고 볼 수는 없습니다.”</p>
-    <p class="src">법무법인 광장 법률의견서 28면<a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=29" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="29">원문 29면</a></p>
+    <p class="src">법무법인 광장 법률의견서 28면<a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=29" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="29">원문 28면</a></p>
     <p>조합원 지위는 법이 정한 대로 사라집니다. 조합이 명부를 어떻게 관리했는지에 따라 달라지지 않습니다. 오히려 2026년 4월 4일 변경계획서 어디에도 ‘대토’라는 말은 나오지 않습니다.</p>
   </div></details>
 
   <details class="qa"><summary>대토협약을 분양신청 전에 맺었으니 분양계약으로 볼 수 있지 않나요?</summary><div class="body">
-    <p>협약을 먼저 맺었더라도 그 뒤에 분양신청기간이 열렸고 그 기간에 신청이 없었다는 사실은 달라지지 않습니다. 개별 합의로 분양신청 절차를 대신할 수 없다는 것이 법원의 일관된 태도입니다.<a class="rm " href="https://yslee-code.github.io/eulji-supp.pdf#page=2" target="_blank" rel="noopener" data-doc="eulji-supp" data-pg="2">을지 보충 2면</a><a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=6" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="6">광장 6면</a></p>
+    <p>협약을 먼저 맺었더라도 그 뒤에 분양신청기간이 열렸고 그 기간에 신청이 없었다는 사실은 달라지지 않습니다. 개별 합의로 분양신청 절차를 대신할 수 없다는 것이 법원의 일관된 태도입니다.<a class="rm " href="https://yslee-code.github.io/eulji-supp.pdf#page=2" target="_blank" rel="noopener" data-doc="eulji-supp" data-pg="2">을지 보충 2면</a><a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=6" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="6">광장 5면</a></p>
     <p class="quote">“대토협약이라는 방식 자체가 상대방을 조합원이 아닌 현금청산대상자로 전제한 것으로 볼 수밖에 없습니다.”</p>
-    <p class="src">법무법인 광장 법률의견서 27면<a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=28" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="28">원문 28면</a></p>
-    <p>덧붙이면, 교회를 조합원으로 본다면 다른 조합원과 똑같은 비례율로 정산해야 합니다. 그러면 대체부지와 공사비, 이주비를 따로 받을 근거가 사라집니다. 조합원이라는 주장과 대토협약 이행 요구는 함께 설 수 없습니다.<a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=28" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="28">광장 28면</a><a class="rm " href="https://yslee-code.github.io/eulji-supp.pdf#page=2" target="_blank" rel="noopener" data-doc="eulji-supp" data-pg="2">을지 보충 2면</a></p>
+    <p class="src">법무법인 을지 보충 검토 2면<a class="rm" href="https://yslee-code.github.io/eulji-supp.pdf#page=2" target="_blank" rel="noopener" data-doc="eulji-supp" data-pg="2">원문 2면</a></p>
+    <p>덧붙이면, 교회를 조합원으로 본다면 다른 조합원과 똑같은 비례율로 정산해야 합니다. 그러면 대체부지와 공사비, 이주비를 따로 받을 근거가 사라집니다. 조합원이라는 주장과 대토협약 이행 요구는 함께 설 수 없습니다.<a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=28" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="28">광장 27면</a><a class="rm " href="https://yslee-code.github.io/eulji-supp.pdf#page=2" target="_blank" rel="noopener" data-doc="eulji-supp" data-pg="2">을지 보충 2면</a></p>
+  </div></details>
+
+  <details class="qa"><summary>현금청산대상자가 되면 협약대로 부지를 받지 못하고 현금만 받게 되는 것 아닙니까?</summary><div class="body">
+    <p><strong>그렇지 않습니다. 「현금청산」이라는 이름 때문에 생기는 오해입니다.</strong> 법은 토지나 건축물로 보상하는 방식을 명시적으로 인정하고 있습니다.</p>
+    <p>도시정비법은 분양신청을 하지 아니한 자에 대한 손실보상에 토지보상법을 준용합니다. 토지보상법 제63조 제1항은 현금보상을 원칙으로 하면서도 사업으로 조성한 토지로 보상하는 경우를 함께 규정하고 있고, 도시정비법은 <b>「대지 또는 건축물을 현물보상하는 경우에는 토지보상법 제42조에도 불구하고 준공인가 이후에도 할 수 있다」</b>고 정하고 있습니다.<a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=5" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="5">광장 4면</a></p>
+    <p class="quote">“도시정비법상 현금청산대상자에 대한 손실보상은 위와 같은 근거 규정에 따라 현금보상 뿐만 아니라 <strong>대토보상과 같은 현물보상 방식으로도 이루어지게 되는 것</strong>입니다.”</p>
+    <p class="src">법무법인 광장 법률의견서 4면<a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=5" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="5">원문 4면</a></p>
+    <p><strong>오히려 대토협약 자체가 법이 정한 손실보상 협의입니다.</strong> 부산지방법원도 대체 토지를 제공하고 건축비·이사비를 병행 지급하는 방식은 도시정비법이 예정한 분양방식이 아니라 <b>별도의 손실보상에 관한 협의</b>에 해당한다고 판단했습니다. 협약을 이행하는 것이 곧 법이 정한 절차를 밟는 것입니다.<a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=6" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="6">광장 5면</a></p>
+    <p>조합정관 제44조 제4항이 「현금으로 청산한다」고만 적고 있어 오해가 생길 수 있습니다. 그러나 손실보상의 방법은 도시정비법과 토지보상법이 정하고 있고, 두 법이 현물보상을 허용하고 있다는 것이 광장의 판단입니다.<a class="rm jg" href="https://yslee-code.github.io/jeongkwan.pdf#page=14" target="_blank" rel="noopener" data-doc="jeongkwan" data-pg="14">정관 제44조 제4항</a></p>
+    <h3 style="margin:14px 0 6px">조합원으로 남는 쪽이 오히려 협약 이행을 어렵게 합니다</h3>
+    <p>조합원이 되면 다른 조합원과 같은 비례율로 정산해야 합니다. 그러면 협약에 따른 대체부지와 공사비, 이주비를 별도로 받을 근거가 사라집니다.<a class="rm" href="https://yslee-code.github.io/eulji-supp.pdf#page=2" target="_blank" rel="noopener" data-doc="eulji-supp" data-pg="2">을지 보충 2면</a> 광장도 개별 합의로 특정 조합원에게 종전자산 비율을 넘는 금원을 지급하는 것은 도시정비법에 위배된다고 보았습니다.<a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=28" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="28">광장 27면</a></p>
+    <p><strong>정리하면, 협약을 예정대로 이행하는 길은 현금청산대상자 지위를 확인하는 쪽입니다.</strong> 조합원 지위를 주장하는 것이 오히려 협약의 근거를 무너뜨립니다. 조합은 이미 체결되어 총회 의결과 관리처분계획을 거친 협약을 그대로 이행한다는 입장입니다.</p>
   </div></details>
 
   <details class="qa"><summary>종전자산에서 종교부지만 빼서 비례율을 올리고, 조합장 자격은 그대로 두면 되지 않나요?</summary><div class="body">
@@ -399,13 +416,13 @@ footer.by b{color:var(--ink-2);font-size:inherit;font-weight:700}
     <p>비례율의 분모는 <b>분양을 받는 조합원의 종전자산 합계</b>입니다. 그 자산에 비례율을 곱한 것이 권리가액이 되고, 권리가액과 분양가액의 차액이 분담금이나 환급금으로 정산됩니다. 하나로 이어진 계산입니다. 종교시설의 자산만 분모에서 빼면, 조합원인데 권리가액도 없고 정산할 분담금도 없는 상태가 됩니다.</p>
     <p class="quote">“교회를 조합원으로 본다면 다른 조합원과 동일한 비례율에 따라 정산하여야 하고, 대체부지와 공사비, 이주비를 별도로 지급받을 근거가 없게 됩니다.”</p>
     <p class="src">법무법인 을지 보충 검토 2면<a class="rm" href="https://yslee-code.github.io/eulji-supp.pdf#page=2" target="_blank" rel="noopener" data-doc="eulji-supp" data-pg="2">원문 2면</a></p>
-    <p>법무법인 광장도 개별 합의로 특정 조합원에게 종전자산 비율을 넘는 금원을 지급하는 것은 도시정비법에 위배된다고 보았습니다. 조합원 지위를 유지시키면서 협약대로 대체부지와 공사비를 주는 것은 바로 그 경우에 해당합니다.<a class="rm" href="https://yslee-code.github.io/gwangjang.pdf#page=28" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="28">광장 28면</a></p>
+    <p>법무법인 광장도 개별 합의로 특정 조합원에게 종전자산 비율을 넘는 금원을 지급하는 것은 도시정비법에 위배된다고 보았습니다. 조합원 지위를 유지시키면서 협약대로 대체부지와 공사비를 주는 것은 바로 그 경우에 해당합니다.<a class="rm" href="https://yslee-code.github.io/gwangjang.pdf#page=28" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="28">광장 27면</a></p>
     <p>임원 자격 문제도 덮이지 않습니다. 도시정비법 제41조 제1항은 조합임원에게 정비구역 내 토지 또는 건축물을 5년 이상 소유할 것을 요구합니다. 종전자산을 분모에서 뺀다는 것은 그 자산이 이미 조합에 출자되어 해당 재단의 소유가 아님을 전제하는 처리입니다.<a class="rm jg" href="https://yslee-code.github.io/jeongkwan.pdf#page=5" target="_blank" rel="noopener" data-doc="jeongkwan" data-pg="5">정관 제15조 제2항</a></p>
     <p>결과도 더 나빠집니다. 지금의 하자는 “청산대상자의 자산이 분모에 잘못 들어가 있다”는 것이고, 광장은 이것이 무효에 이를 만큼 중대·명백하다고 보기는 어렵다고 판단했습니다. 반면 절충안대로 하면 “특정 조합원에게만 비례율을 넘는 이익을 주는 관리처분계획”이 되어, 조합원 누구나 다툴 수 있는 새로운 하자가 생깁니다.</p>
   </div></details>
 
   <details class="qa"><summary>천주교와 동산교회만 종전자산에서 빼고 중부감리교회는 그대로 두면 어떻습니까?</summary><div class="body">
-    <p><strong>같은 상황인데 한 곳만 다르게 대하는 것이 됩니다.</strong> 세 곳 모두 분양신청기간에 분양신청을 하지 않았고, 태일회계법인은 세 곳 모두 “존치 또는 대토 여부와 관계없이 분담금 부담 대상인 조합원에 해당하지 않는다”고 판단했습니다.<a class="rm" href="https://yslee-code.github.io/taeil.pdf#page=21" target="_blank" rel="noopener" data-doc="taeil" data-pg="21">태일 21면</a></p>
+    <p><strong>같은 상황인데 한 곳만 다르게 대하는 것이 됩니다.</strong> 세 곳 모두 분양신청기간에 분양신청을 하지 않았고, 태일회계법인은 세 곳 모두 “존치 또는 대토 여부와 관계없이 분담금 부담 대상인 조합원에 해당하지 않는다”고 판단했습니다.<a class="rm" href="https://yslee-code.github.io/taeil.pdf#page=21" target="_blank" rel="noopener" data-doc="taeil" data-pg="21">태일 20면</a></p>
     <p>조합의 관리처분계획도 세 곳을 구분하지 않습니다. 제10조는 분양신청을 하지 않은 자를 조합원에서 제외한다고 정하고, 제14조 제13항은 청산자로 분류될 경우 그 종전 총가액을 분모에서 제외하라고 정합니다. 어느 조항도 “세 곳 중 두 곳만”이라는 여지를 두고 있지 않습니다.<a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=13" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="13">제10조 · 311면</a><a class="rm gv" href="https://yslee-code.github.io/chonghoe.pdf#page=16" target="_blank" rel="noopener" data-doc="chonghoe" data-pg="16">제14조 제13항 · 314면</a></p>
     <h3 style="margin:14px 0 6px">비례율로 보면 차이는 크지 않습니다</h3>
     <div class="calc">
@@ -419,29 +436,50 @@ footer.by b{color:var(--ink-2);font-size:inherit;font-weight:700}
   </div></details>
 
   <details class="qa"><summary>정관을 바꾸거나 총회에서 다시 선임하면 되지 않나요?</summary><div class="body">
-    <p>조합원 자격과 임원 자격은 법이 직접 정하고 있어 정관으로 바꿀 수 없습니다. 총회에서 다시 뽑아도 같은 문제를 안은 결의를 되풀이할 뿐입니다.<a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=28" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="28">광장 28면</a></p>
-    <p>전문조합관리인 제도도 조합장 자리를 지키는 장치가 아닙니다. 쓸 수 있는 경우가 법으로 정해져 있고, 시장·군수가 공개모집으로 뽑기 때문에 조합이 특정인을 지정할 수 없습니다. 선정되면 오히려 기존 임원이 당연히 물러납니다.</p>
+    <p>조합원 자격과 임원 자격은 법이 직접 정하고 있어 정관으로 바꿀 수 없습니다. 총회에서 다시 뽑아도 같은 문제를 안은 결의를 되풀이할 뿐입니다.<a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=28" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="28">광장 27면</a></p>
+    <p>전문조합관리인 제도도 조합장 자리를 지키는 장치가 아닙니다. 시장·군수가 공개모집으로 뽑기 때문에 조합이 특정인을 지정할 수 없고, 선정되면 오히려 기존 임원이 당연히 물러납니다. 자격 요건도 있습니다. 변호사 등 자격을 취득한 뒤 정비사업 관련 업무에 5년 이상 종사하거나 조합임원으로 5년 이상 종사해야 하는데, <strong>현 조합장은 2021. 10. 7. 이사 취임을 기산점으로 보더라도 아직 5년에 이르지 않습니다.</strong><a class="rm" href="https://yslee-code.github.io/eulji-supp.pdf#page=4" target="_blank" rel="noopener" data-doc="eulji-supp" data-pg="4">을지 보충 4면</a></p>
+  </div></details>
+
+  <details class="qa"><summary>조합장 자격 문제는 소송으로만 정리되는 것 아닙니까?</summary><div class="body">
+    <p><strong>아닙니다. 정관이 소송을 거치지 않도록 정해두었습니다.</strong> 현금청산대상자는 조합 임원으로 선임될 수 없고<a class="rm jg" href="https://yslee-code.github.io/jeongkwan.pdf#page=5" target="_blank" rel="noopener" data-doc="jeongkwan" data-pg="5">정관 제17조 제1항 제7호</a>, 선임 당시 그에 해당하는 자였음이 판명되면 <strong>당연히 퇴임</strong>합니다.<a class="rm jg" href="https://yslee-code.github.io/jeongkwan.pdf#page=5" target="_blank" rel="noopener" data-doc="jeongkwan" data-pg="5">정관 제17조 제2항</a></p>
+    <p>그리고 이렇게 당연히 퇴임한 임원에 대해서는 <strong>해임 절차 없이 그 사유가 발생한 날로부터 자격을 잃는다</strong>고 정관에 명시되어 있습니다.<a class="rm jg" href="https://yslee-code.github.io/jeongkwan.pdf#page=6" target="_blank" rel="noopener" data-doc="jeongkwan" data-pg="6">정관 제18조 제1항 단서</a> 해임총회도, 판결도 요건이 아닙니다. 조합이 요건 충족 여부를 확인하면 되는 일입니다.</p>
+    <p>소송은 그 판단에 다툼이 생겼을 때의 <strong>사후 확정 수단</strong>입니다. 만약 판결이 날 때까지 아무것도 할 수 없다면 임원 결격 규정 자체가 의미를 잃습니다. 누구든 소송만 제기하면 자격을 유지하게 되기 때문입니다.</p>
+    <p>법무법인 광장도 같은 결론입니다. 현금청산대상자인 종교재단의 대리인을 조합장으로 선임한 총회 결의는 무효로 판단되고, 조합장은 당연 퇴임한다고 보았습니다.<a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=2" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="2">광장 1면</a></p>
+    <p><strong>소송이 제기되어도 사업은 멈추지 않습니다.</strong> 퇴임 전에 관여한 행위는 효력을 잃지 않고<a class="rm jg" href="https://yslee-code.github.io/jeongkwan.pdf#page=5" target="_blank" rel="noopener" data-doc="jeongkwan" data-pg="5">정관 제17조 제3항</a>, 조합장의 공백은 이사회에서 선출된 자가 직무를 대행합니다.<a class="rm jg" href="https://yslee-code.github.io/jeongkwan.pdf#page=5" target="_blank" rel="noopener" data-doc="jeongkwan" data-pg="5">정관 제16조 제6항</a></p>
+    <p>참고로 조합장이 자기 자격을 다투는 소송에 관련된 경우, 그 사건에서 조합을 대표하는 것은 조합장이 아니라 <strong>감사</strong>입니다.<a class="rm jg" href="https://yslee-code.github.io/jeongkwan.pdf#page=5" target="_blank" rel="noopener" data-doc="jeongkwan" data-pg="5">정관 제16조 제5항</a></p>
   </div></details>
 
   <details class="qa"><summary>이미 입주했는데 지금까지의 결의와 계약이 무효가 되나요?</summary><div class="body">
     <p><strong>그렇지 않습니다.</strong> 도시정비법 제43조 제3항과 조합정관 제17조 제3항은 “퇴임된 임원이 퇴임 전에 관여한 행위는 그 효력을 잃지 아니한다”고 정하고 있습니다. 이미 완료된 입주와 소유권이전등기, 시공사 기성금 지급 등이 거슬러 올라가 무효가 되는 것이 아닙니다.<a class="rm jg" href="https://yslee-code.github.io/jeongkwan.pdf#page=5" target="_blank" rel="noopener" data-doc="jeongkwan" data-pg="5">정관 제17조 제3항</a></p>
-    <p>다만 이 점에 관한 대법원 판례가 아직 없어 다툼의 여지가 있으므로, 새 조합장이 소집한 총회에서 기존 결의와 계약을 추인해 두는 것이 안전하다는 것이 두 법무법인의 의견입니다. 추인은 사후 정리 절차이지 무효 선언이 아닙니다.<a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=23" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="23">광장 23면</a></p>
+    <p>다만 이 점에 관한 대법원 판례가 아직 없어 다툼의 여지가 있으므로, 새 조합장이 소집한 총회에서 기존 결의와 계약을 추인해 두는 것이 안전하다는 것이 두 법무법인의 의견입니다. 추인은 사후 정리 절차이지 무효 선언이 아닙니다.<a class="rm " href="https://yslee-code.github.io/gwangjang.pdf#page=23" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="23">광장 22면</a></p>
   </div></details>
 
   <details class="qa"><summary>지금 문제 삼으면 사업이 지연되는 것 아닙니까?</summary><div class="body">
-    <p>오히려 반대입니다. 이전고시가 이루어지고 나면 관리처분계획을 다툴 법률상 이익이 인정되지 않는다는 것이 대법원 전원합의체의 입장입니다(2011두6400). 비례율을 바로잡을 수단이 사라지고, 그 상태로 조합원별 청산금이 확정됩니다.</p>
+    <p>오히려 반대입니다. 이전고시가 이루어지고 나면 관리처분계획을 다툴 법률상 이익이 인정되지 않는다는 것이 대법원 전원합의체의 입장입니다.<a class="rm" href="https://casenote.kr/%EB%8C%80%EB%B2%95%EC%9B%90/2011%EB%91%906400" target="_blank" rel="noopener">대법원 2011두6400</a> 비례율을 바로잡을 수단이 사라지고, 그 상태로 조합원별 청산금이 확정됩니다.</p>
     <p>그렇다고 분쟁이 끝나는 것도 아닙니다. 청산금 부과에 관한 개별 분쟁과 임원 자격을 둘러싼 분쟁은 그대로 남습니다.</p>
-    <p>반대로 변경인가를 받고 나면 종전 관리처분계획은 효력을 잃으므로(대법원 2014다16500), 지금의 하자를 둘러싼 다툼은 그것으로 마무리됩니다. 절차를 밟는 것이 분쟁을 키우는 일이 아니라 끝내는 길입니다.</p>
+    <p>반대로 변경인가를 받고 나면 종전 관리처분계획은 효력을 잃으므로, 지금의 하자를 둘러싼 다툼은 그것으로 마무리됩니다.<a class="rm" href="https://casenote.kr/%EB%8C%80%EB%B2%95%EC%9B%90/2014%EB%8B%A416500" target="_blank" rel="noopener">대법원 2014다16500</a> 절차를 밟는 것이 분쟁을 키우는 일이 아니라 끝내는 길입니다.</p>
   </div></details>
 
   <details class="qa"><summary>직무대행자를 세우면 조합장이 소송을 걸 테고, 그러면 사업이 늦어져 이전고시도 밀리는 것 아닙니까?</summary><div class="body">
     <p><strong>소송이 제기되어도 준공과 입주, 이전고시 같은 사업 실무는 멈추지 않습니다.</strong> 직무대행자 선정은 소송의 결과가 아니라 조합정관 제16조 제6항에 따른 이사회 절차입니다. 조합장이 이를 다투더라도 그 자체로 공사나 등기 절차가 정지되지는 않습니다.<a class="rm jg" href="https://yslee-code.github.io/jeongkwan.pdf#page=5" target="_blank" rel="noopener" data-doc="jeongkwan" data-pg="5">정관 제16조 제6항</a></p>
     <p>법무법인 을지는 오히려 다툼이 예상되는 상황을 전제로 절차를 제시했습니다. 직무대행자 선정과 <b>병행하여</b> 조합장 직무집행정지 가처분을 신청하고, 본안으로 조합장 지위 부존재 확인을 구하는 방법입니다. 가처분이 인용되면 법인등기부에 직무집행정지가 기입되므로 거래 상대방의 혼선도 줄어듭니다.<a class="rm" href="https://yslee-code.github.io/eulji-supp.pdf#page=1" target="_blank" rel="noopener" data-doc="eulji-supp" data-pg="1">을지 보충 1면</a></p>
     <p>인장·통장과 회계·계약 서류의 인계 요구는 직무대행자 명의로 하고 그 경과를 기록으로 남기도록 되어 있습니다. 실무 공백을 메우기 위한 절차이지 사업을 멈추는 절차가 아닙니다.</p>
+    <p>가처분에는 시간이 걸립니다. 을지는 접수 후 통상 2개월에서 6개월 정도를 예상했습니다. <strong>다만 결정이 나기 전이라도 당연퇴임의 효력은 이미 발생한 상태입니다.</strong> 그래서 직무대행 체제를 먼저 갖추어 이사회와 대의원회를 중심으로 업무를 처리할 수 있다고 보았습니다.<a class="rm" href="https://yslee-code.github.io/eulji-supp.pdf#page=3" target="_blank" rel="noopener" data-doc="eulji-supp" data-pg="3">을지 보충 3면</a></p>
     <h3 style="margin:14px 0 6px">지연 위험은 오히려 그대로 두는 쪽에 있습니다</h3>
     <p>자격이 다투어지는 조합장이 소집한 총회에서 관리처분계획 변경을 의결하면, 그 결의의 효력이 다시 다투어집니다. 변경인가까지 받은 뒤에 결의가 무효로 판단되면 처음부터 다시 해야 합니다. <strong>적법한 소집권자를 먼저 세워 두는 것이 한 번에 끝내는 길입니다.</strong></p>
     <p>시간을 놓쳤을 때의 손실도 분명합니다. 이전고시가 이루어지면 관리처분계획의 취소나 무효 확인을 구할 법률상 이익이 인정되지 않는다는 것이 대법원 전원합의체의 입장입니다. 비례율을 바로잡을 수단이 사라진 채 조합원별 청산금이 확정됩니다.<a class="rm" href="https://casenote.kr/%EB%8C%80%EB%B2%95%EC%9B%90/2011%EB%91%906400" target="_blank" rel="noopener">대법원 2011두6400</a></p>
-    <p>그렇다고 분쟁이 끝나는 것도 아닙니다. 청산금 부과를 둘러싼 개별 분쟁과 임원 자격 분쟁은 그대로 남습니다. 이미 이루어진 결의와 계약은 추인 결의로 정리할 수 있다는 것이 두 법무법인의 공통된 의견입니다.<a class="rm" href="https://yslee-code.github.io/gwangjang.pdf#page=23" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="23">광장 23면</a></p>
+    <p>그렇다고 분쟁이 끝나는 것도 아닙니다. 청산금 부과를 둘러싼 개별 분쟁과 임원 자격 분쟁은 그대로 남습니다. 이미 이루어진 결의와 계약은 추인 결의로 정리할 수 있다는 것이 두 법무법인의 공통된 의견입니다.<a class="rm" href="https://yslee-code.github.io/gwangjang.pdf#page=23" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="23">광장 22면</a></p>
+  </div></details>
+
+  <details class="qa"><summary>조합장이 수원시에 이의를 제기해서 인가가 늦어지면 어떻게 합니까?</summary><div class="body">
+    <p>그럴 가능성이 있습니다. <strong>두 법률의견서도 다툼을 전제로 순서를 제시했습니다.</strong></p>
+    <p>먼저 알아두실 것이 있습니다. 조합임원의 변경은 도시정비법 시행령 제31조 제4호의 「경미한 사항」으로서 신고 대상입니다. 조합장 측이 “수원시가 인가해줬으니 자격에 문제가 없다”고 말해온 근거가 바로 이 절차입니다. 을지는 같은 조문을 들어, 피선임 자격에 관한 실질적 심사를 거친 것으로 보기 어렵고 행정청의 수리로 총회 결의의 하자가 치유되지도 않는다고 보았습니다.<a class="rm" href="https://yslee-code.github.io/eulji-supp.pdf#page=3" target="_blank" rel="noopener" data-doc="eulji-supp" data-pg="3">을지 보충 3면</a></p>
+    <p class="quote">“행정청(수원시)이 인가를 하였다고 하여 무효인 총회 결의가 유효로 인정될 수는 없습니다.”</p>
+    <p class="src">법무법인 광장 법률의견서<a class="rm" href="https://yslee-code.github.io/gwangjang.pdf#page=29" target="_blank" rel="noopener" data-doc="gwangjang" data-pg="29">원문 28면</a></p>
+    <p>법무법인 을지는 직무대행자 선정과 <b>병행하여</b> 조합장 직무집행정지 가처분을 신청하는 방법을 제시했습니다. 가처분이 인용되면 법인등기부에 직무집행정지가 기입되므로 거래 상대방의 혼선이 줄어든다는 것입니다. 본안 확정판결까지 기다려야 하는 것이 아닙니다.<a class="rm" href="https://yslee-code.github.io/eulji-supp.pdf#page=1" target="_blank" rel="noopener" data-doc="eulji-supp" data-pg="1">을지 보충 1면</a></p>
+    <p>을지는 이렇게 정리했습니다. <b>조합장 자격 문제와 분리해서 종교용지만 제외하는 관리처분계획 변경인가를 받는 것 자체는 가능합니다.</b> 다만 총회 소집권자의 문제가 남으므로, 변경 결의를 위한 총회만큼은 적법한 직무대행자 또는 신임 조합장이 소집하는 것이 안전하다는 것입니다. 비례율 변경은 경미한 변경이 아니어서 총회 의결과 변경인가를 모두 거쳐야 합니다.<a class="rm" href="https://yslee-code.github.io/eulji-supp.pdf#page=4" target="_blank" rel="noopener" data-doc="eulji-supp" data-pg="4">을지 보충 4면</a></p>
+    <p>일정도 을지가 짚었습니다. 준공 예정일부터 이전고시까지 수개월이 걸릴 것으로 보이므로, <strong>지금 절차에 착수하면 이전고시 전에 변경인가를 받는 일정은 가능하다</strong>는 것입니다.<a class="rm" href="https://yslee-code.github.io/eulji-supp.pdf#page=4" target="_blank" rel="noopener" data-doc="eulji-supp" data-pg="4">을지 보충 4면</a></p>
+    <p>반대로 절차를 미루면 손해는 조합원에게 돌아옵니다. 이전고시가 이루어지면 관리처분계획을 다툴 법률상 이익이 인정되지 않고, 비례율은 지금 상태로 확정됩니다.</p>
   </div></details>
 
   <details class="qa"><summary>이 법률검토는 누가 왜 의뢰한 것입니까?</summary><div class="body">
@@ -509,23 +547,23 @@ footer.by b{color:var(--ink-2);font-size:inherit;font-weight:700}
   본 자료는 법무법인 광장(2026. 9. 14.자)·법무법인 을지(2026. 9. 23.자)의 각 법률의견서와 태일회계법인 검토보고서(2026. 6. 30.), 2026년 정기총회 책자의 관리처분계획기준 변경(안), 조합정관(2024. 5. 22. 개정)을 근거로 작성되었습니다. 비례율 수치는 추정치이며 총회 의결과 변경인가를 거쳐 확정됩니다.
 </div></footer>
 
-<footer class="by"><div class="wrap"><b>작성 · 권선113-6구역 주택재개발정비사업조합 이영식 이사</b><span>· 2026. 9. 29.</span></div></footer>
+<footer class="by"><div class="wrap"><b>작성 · 권선113-6구역 주택재개발정비사업조합 이영식 이사</b><span>· 2026. 9. 30. v1.2</span></div></footer>
 
 <script>
 const EVENTS=[
  {d:"2009. 1. 8.",k:"사업",t:"주택재개발정비구역 지정",w:""},
  {d:"2009. 8. 25.",k:"사업",t:"조합설립 인가",w:""},
  {d:"2012. 6. 18.",k:"사업",t:"사업시행인가 고시",w:""},
- {d:"2012년경",k:"협약",t:"중부감리교회와 최초 대토협약 체결",w:"어린이공원 내 부지 100평 및 건축물 100평 제공"},
+ {d:"2012년경",k:"협약",t:"중부감리교회와 최초 대토협약 체결",w:"부지 100평 및 건축물 100평 제공. 협약 명의는 「중부감리교회」"},
  {d:"2013. 5. 10.",k:"협약",t:"총회에서 중부감리교회 협약 승인",w:"제9호 안건"},
- {d:"2014. 9. 5.",k:"협약",t:"기독교대한감리회유지재단과 2차 협약",w:"신축 제공 대신 공사비 347,900,000원 지원으로 변경"},
+ {d:"2014. 9. 5.",k:"협약",t:"기독교대한감리회유지재단(중부감리교회)과 2차 협약",w:"신축 제공 대신 공사비 347,900,000원 지원으로 변경. 협약 명의가 「중부감리교회」에서 재단으로 바뀜"},
  {d:"2014. 12. 24.",k:"협약",t:"천주교수원교구유지재단과 대토 협약",w:"토지 교환 및 잔여 토지 현금 정산"},
  {d:"2017. 1. 25.",k:"분양신청",t:"사업시행계획변경인가 및 조합원 분양공고",w:"수원시 고시 제2017-018호 · 분양신청기간 2017. 2. 1.~3. 7."},
  {d:"2017. 3. 8.",k:"분양신청",t:"조합원 분양신청 연장공고",w:"연장기간 2017. 3. 8.~3. 20."},
  {d:"2017. 3. 21.",k:"분양신청",t:"종교재단의 조합원 지위 상실",w:"두 법률의견서의 판단. 분양신청기간 종료일 다음 날"},
  {d:"2018. 6. 8.",k:"관리처분",t:"최초 관리처분계획 인가",w:"수원시 고시 제2018-173호. 종교용지가 분모에 포함된 채 산정"},
  {d:"2018. 11. 2.",k:"협약",t:"대의원회에서 3차 협약서 변경 승인",w:""},
- {d:"2018. 11. 12.",k:"협약",t:"기독교대한감리회유지재단과 3차 협약",w:"공사비 423,935,000원, 보증금 4억 1천만원 등 확정"},
+ {d:"2018. 11. 12.",k:"협약",t:"기독교대한감리회유지재단(중부감리교회)과 3차 협약",w:"공사비 423,935,000원, 보증금 4억 1천만원 등 확정"},
  {d:"2019. 2. 20.",k:"협약",t:"동산교회와 존치 합의",w:"토지 맞교환 및 사택·다세대 보상"},
  {d:"2021. 10. 7.",k:"임원",t:"임시총회에서 고충현 이사 당선",w:"중부감리교회의 피선거권 위임"},
  {d:"2024. 12. 2.",k:"임원",t:"임시총회에서 고충현 조합장 당선",w:""},
@@ -614,7 +652,12 @@ rk.addEventListener("change",()=>{drawRefs();bindMarks(refs);});drawRefs();
 
 /* ── 원문 뷰어 ─────────────────────────────── */
 const DOCNAME={gwangjang:"법무법인(유) 광장 법률의견서 (2026. 9. 14.)",eulji:"법무법인 을지 법률의견서 (2026. 9. 23.)","eulji-supp":"법무법인 을지 보충 질의사항 검토 (2026. 9. 23.)",taeil:"태일회계법인 검토보고서 (2026. 6. 30.)",chonghoe:"2026년 정기총회 책자 발췌 (299~346면)",jeongkwan:"권선113-6구역 조합정관 (2024. 5. 22. 개정)"};
-let vEl=null,vDoc=null,vPage=1,vBusy=false,libTried=false;
+let vEl=null,vDoc=null,vPage=1,vBusy=false,libTried=false,vZoom=1;
+function setZoom(z){
+  z=Math.min(4,Math.max(1,z));
+  if(Math.abs(z-vZoom)<.01)return;
+  vZoom=z;go(vPage);
+}
 function loadLib(src){
   if(libTried)return Promise.reject();
   libTried=true;
@@ -628,19 +671,25 @@ function buildViewer(){
       <span class="vt" id="vTitle"></span>
       <button type="button" class="vbtn x vx" id="vClose">닫기</button>
       <span class="vnav">
+        <button type="button" class="vbtn vz" id="vOut" aria-label="축소">−</button>
         <button type="button" class="vbtn" id="vPrev">← 이전</button>
         <span class="vpage" id="vNum">· / ·</span>
         <button type="button" class="vbtn" id="vNext">다음 →</button>
+        <button type="button" class="vbtn vz" id="vIn" aria-label="확대">＋</button>
       </span>
     </div><div class="vstage" id="vStage"></div>`;
   document.body.appendChild(d);
   d.querySelector("#vClose").addEventListener("click",closeViewer);
   d.querySelector("#vPrev").addEventListener("click",()=>go(vPage-1));
   d.querySelector("#vNext").addEventListener("click",()=>go(vPage+1));
+  d.querySelector("#vIn").addEventListener("click",()=>setZoom(vZoom*1.5));
+  d.querySelector("#vOut").addEventListener("click",()=>setZoom(vZoom/1.5));
   d.addEventListener("click",e=>{if(e.target===d)closeViewer();});
   return d;
 }
 function closeViewer(){if(vEl){vEl.remove();vEl=null;vDoc=null;document.body.style.overflow="";}}
+let vRz=null;
+window.addEventListener("resize",()=>{if(!vEl||!vDoc)return;clearTimeout(vRz);vRz=setTimeout(()=>go(vPage),250);});
 document.addEventListener("keydown",e=>{
   if(!vEl)return;
   if(e.key==="Escape")closeViewer();
@@ -654,15 +703,23 @@ async function go(n){
   const stage=vEl.querySelector("#vStage");
   try{
     const page=await vDoc.getPage(n);
-    const avail=Math.min(stage.clientWidth-32,1100);
     const base=page.getViewport({scale:1});
-    const scale=Math.max(.4,avail/base.width)*Math.min(2,window.devicePixelRatio||1);
-    const vp=page.getViewport({scale});
+    const fit=Math.min(stage.clientWidth-32,1100);
+    const cssW=Math.max(240,fit*vZoom);                       /* 화면에 그릴 폭 */
+    const dpr=Math.min(3,Math.max(1,window.devicePixelRatio||1));
+    let ss=dpr*1.4;                                            /* 여유 해상도 */
+    const budget=14e6;                                         /* 캔버스 화소 상한 */
+    const ratio=base.height/base.width;
+    if(cssW*ss*cssW*ss*ratio>budget) ss=Math.sqrt(budget/(cssW*cssW*ratio));
+    const vp=page.getViewport({scale:(cssW*ss)/base.width});
     const cv=document.createElement("canvas");
-    cv.width=vp.width;cv.height=vp.height;
-    cv.style.width=Math.round(vp.width/Math.min(2,window.devicePixelRatio||1))+"px";
-    await page.render({canvasContext:cv.getContext("2d"),viewport:vp}).promise;
+    cv.width=Math.round(vp.width);cv.height=Math.round(vp.height);
+    cv.style.width=Math.round(cssW)+"px";cv.style.maxWidth="none";
+    const cx=cv.getContext("2d");
+    if(cx.imageSmoothingQuality!==undefined)cx.imageSmoothingQuality="high";
+    await page.render({canvasContext:cx,viewport:vp}).promise;
     stage.innerHTML="";stage.appendChild(cv);stage.scrollTop=0;
+    if(vZoom>1)stage.scrollLeft=(cv.offsetWidth-stage.clientWidth)/2;
   }catch(err){stage.innerHTML=`<p class="vmsg">이 면을 불러오지 못했습니다.</p>`;}
   vEl.querySelector("#vNum").textContent=`${n} / ${vDoc.numPages}`;
   vEl.querySelector("#vPrev").disabled=n<=1;
@@ -671,7 +728,7 @@ async function go(n){
 }
 async function openDoc(key,startPage){
   const url=FILES[key];if(!url)return;
-  vEl=buildViewer();document.body.style.overflow="hidden";
+  vZoom=1;vEl=buildViewer();document.body.style.overflow="hidden";
   vEl.querySelector("#vTitle").textContent=DOCNAME[key]||url;
   const stage=vEl.querySelector("#vStage");
   stage.innerHTML=`<p class="vmsg">원문을 불러오는 중입니다…</p>`;
